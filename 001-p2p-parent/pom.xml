@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <modules>
+        <module>../002-p2p-exterface</module>
+        <module>../003-p2p-dataservice</module>
+        <module>../004-p2p-common</module>
+        <module>../005-p2p-web</module>
+        <module>../006-p2p-timed-task</module>
+        <module>../007-p2p-payment</module>
+    </modules>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.4</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>cn.syned.p2p</groupId>
+    <artifactId>001-p2p-parent</artifactId>
+    <version>1.0.0</version>
+    <name>001-p2p-parent</name>
+    <packaging>pom</packaging>
+
+    <description>001-p2p-parent</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-boot-dependencies-version>2.4.4</spring-boot-dependencies-version>
+        <mysql-connector-java-version>8.0.23</mysql-connector-java-version>
+        <mybatis-spring-boot-starter-version>2.1.4</mybatis-spring-boot-starter-version>
+        <dubbo-spring-boot-starter-version>2.7.9</dubbo-spring-boot-starter-version>
+        <curator.version>5.1.0</curator.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <fastjson.version>1.2.75</fastjson.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <commons-lang3-version>3.8.1</commons-lang3-version>
+        <jaxen.version>1.2.0</jaxen.version>
+        <alipay-easysdk-version>2.2.0</alipay-easysdk-version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--SpringBoot 依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-dependencies-version}</version>
+            </dependency>
+            <!--MySQL依赖-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-java-version}</version>
+            </dependency>
+            <!--Mybatis SpringBoot依赖-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-spring-boot-starter-version}</version>
+            </dependency>
+            <!--Dubbo SpringBoot依赖-->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo-spring-boot-starter-version}</version>
+            </dependency>
+            <!--Zookeeper-->
+            <dependency>
+                <groupId>org.apache.curator</groupId>
+                <artifactId>curator-recipes</artifactId>
+                <version>${curator.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>log4j</groupId>
+                        <artifactId>log4j</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <!--Apache HttpClient-->
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <!--FastJson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!--Dom4J-->
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
+            </dependency>
+            <!--commons-lang3-->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons-lang3-version}</version>
+            </dependency>
+            <!-- Jaxen -->
+            <dependency>
+                <groupId>jaxen</groupId>
+                <artifactId>jaxen</artifactId>
+                <version>${jaxen.version}</version>
+            </dependency>
+            <!-- AliPay SDK -->
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-easysdk</artifactId>
+                <version>${alipay-easysdk-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

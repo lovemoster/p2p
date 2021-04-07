@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TemplatesSettings">
+    <option name="templateConfigs">
+      <TemplateContext>
+        <option name="generateConfig">
+          <GenerateConfig>
+            <option name="annotationType" value="NONE" />
+            <option name="basePackage" value="mapper" />
+            <option name="basePath" value="src/main/java/" />
+            <option name="domainObjectName" value="BBidInfo" />
+            <option name="encoding" value="UTF-8" />
+            <option name="extraTemplateNames">
+              <list>
+                <option value="mapperInterface" />
+                <option value="mapperXml" />
+              </list>
+            </option>
+            <option name="moduleName" value="003-p2p-dataservice" />
+            <option name="modulePath" value="$PROJECT_DIR$/003-p2p-dataservice" />
+            <option name="needsComment" value="true" />
+            <option name="relativePackage" value="mapper" />
+            <option name="tableName" value="b_bid_info" />
+            <option name="targetProject" value="$PROJECT_DIR$" />
+            <option name="templatesName" value="simple" />
+          </GenerateConfig>
+        </option>
+        <option name="projectPath" value="$PROJECT_DIR$" />
+      </TemplateContext>
+    </option>
+  </component>
+</project>

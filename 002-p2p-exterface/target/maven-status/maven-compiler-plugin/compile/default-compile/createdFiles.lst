@@ -1,0 +1,13 @@
+cn\syned\p2p\service\LoanInfoService.class
+cn\syned\p2p\entity\IncomeRecord.class
+cn\syned\p2p\service\RedisService.class
+cn\syned\p2p\service\RechargeService.class
+cn\syned\p2p\entity\FinaceAccount.class
+cn\syned\p2p\service\FinaceAccountService.class
+cn\syned\p2p\entity\BidInfo.class
+cn\syned\p2p\service\IncomeRecordService.class
+cn\syned\p2p\entity\LoanInfo.class
+cn\syned\p2p\service\UserService.class
+cn\syned\p2p\entity\RechargeRecord.class
+cn\syned\p2p\entity\User.class
+cn\syned\p2p\service\BidInfoService.class

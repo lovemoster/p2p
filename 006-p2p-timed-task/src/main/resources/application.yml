@@ -1,0 +1,14 @@
+server:
+  port: 8006
+  servlet:
+    context-path: /
+#注册中心配置
+dubbo:
+  application:
+    name: 006-p2p-timed-task
+  registry:
+    address: zookeeper://10.0.200.100:2181
+    timeout: 60000
+  protocol:
+    name: dubbo
+    port: -1
